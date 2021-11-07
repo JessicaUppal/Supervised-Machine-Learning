@@ -2,6 +2,10 @@
 
 This task will be building a machine learning model that attempts to predict whether a loan from LendingClub will become high risk or not. 
 
+
+![Credit_Risk](Resources/credit_risk.webp)
+
+
 ## Background
 
 LendingClub is a peer-to-peer lending services company that allows individual investors to partially fund personal loans as well as buy and sell notes backing the loans on a secondary market. LendingClub offers their previous data through an API.
