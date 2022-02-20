@@ -31,11 +31,18 @@ The code and analysis is located in the main directory and the filenane is Credi
 
 ![Logistic Regression](Resources/logistic_regression.png)
 
+Rather than fitting a linear line as done in linear regression model, The logistic regression model creates an S-shaped curve fitting the data.  This is a binary claffication algorithm that can be used to model the probability of a certain class or event.
+
 
 ## Random Forest Model
 
 
 ![Random Forest Model](Resources/random_forest.png)
+
+
+Random forest is a classification algorithm that consists of a large number of individual decision trees that operate together. The individual trees in the random forest spits out a class prediction and the class with the most votes becomes the model’s prediction. It's use of bagging and feature randomness when building each individual tree creates an uncorrelated forest of trees whose prediction is more accurate than that of an individual tree.
+
+
 
 ## Scale the data
 
