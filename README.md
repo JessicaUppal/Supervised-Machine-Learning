@@ -8,23 +8,39 @@ This task will be building a machine learning model that attempts to predict whe
 
 ## Background
 
-LendingClub is a peer-to-peer lending services company that allows individual investors to partially fund personal loans as well as buy and sell notes backing the loans on a secondary market. LendingClub offers their previous data through an API.
+LendingClub is a peer-to-peer lending services company that allows individual investors to partially fund personal loans, as well as buy and sell notes backing the loans on a secondary market. LendingClub offers their previous data through an API.
 
-This data will be used to create machine learning models to classify the risk level of given loans. This task will compare the Logistic Regression model and Random Forest Classifier.
+The data from LendingClub loans will be used to create machine learning models to classify the risk level of given loans. This task will compare the Logistic Regression model and Random Forest Classifier.
+
+## Datasets
+
+The loan datasets are located in the [/Resources](Resources/) directory.
+
+## Jupyter notebook code
+
+The code and analysis is located in the main directory and the filenane is Credit Risk Evaluator.ipynb
 
 ## Preprocessing: Convert categorical data to numeric
 
-First a training set has been created from the 2019 loans using `pd.get_dummies()` to convert the categorical data to numeric columns. The same will be done for 2020 loans, also using `pd.get_dummies(). Missing categories will also need to be added into the testing set.
+* The training dataset has been created from the 2019 loans using `pd.get_dummies()` to convert the categorical data to numeric columns. 
+* The same is done for 2020 loans, also using `pd.get_dummies(). 
+* Missing categories were added into the testing set.
 
-## Consider the models
-
-Two models will be created and compared on this data: a logistic regression, and a random forests classifier. 
+## Logistic Regression Model
 
 
-## Revisit the Preprocessing: Scale the data
+![Logistic Regression](Resources/logistic_regression.png)
 
-`StandardScaler` has been used to scale the training and testing sets. 
-The LogisticRegression and RandomForestClassifier models have been fitted and scored on the scaled data. 
+
+## Random Forest Model
+
+
+![Random Forest Model](Resources/random_forest.png)
+
+## Scale the data
+
+The Preprocessing data has been revisted and `StandardScaler` has been applied to scale the training and testing sets. 
+The LogisticRegression and RandomForestClassifier models have been fitted and scored using the scaled data. 
 
 ### References
 
